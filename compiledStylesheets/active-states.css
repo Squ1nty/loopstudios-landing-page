@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+.flow > * + * {
+  margin-top: 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.Josefin-Sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.Alata {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.padding-3 {
+  padding: 6vw;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar__anchor:hover {
+    filter: opacity(40%);
+  }
+}
+@media (min-width: 769px) {
+  .navbar__anchor {
+    position: relative;
+    padding: 0.85vw 0;
+  }
+  .navbar__anchor:hover:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 40%;
+    border-bottom: 1px solid hsl(0, 0%, 100%);
+  }
+}
+
+/*# sourceMappingURL=active-states.css.map */

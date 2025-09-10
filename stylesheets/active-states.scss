@@ -1,0 +1,22 @@
+@use 'main';
+@media(max-width: 768px){
+  .navbar__anchor:hover{
+    filter: opacity(40%);
+  }
+}
+@media(min-width: 769px){
+  .navbar__anchor{
+    position: relative;
+    padding: 0.85vw 0;
+  }
+  .navbar__anchor:hover:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 1px;
+    width: 40%;
+    border-bottom: 1px solid main.$white;
+  }
+}

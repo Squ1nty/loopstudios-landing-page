@@ -42,6 +42,7 @@
   }
   nav a{
     font-size: 1.5rem;
+    text-transform: uppercase;
   }
   .header__sloganContainer{
     width: fit-content;
@@ -67,7 +68,7 @@
     padding: 0 1.25vw;
   }
   nav a{
-    font-size: min(1.5vw, 0.75rem);
+    font-size: max(1vw, 0.75rem);
   }
   .header__sloganContainer{
     margin: 10vw 0;
