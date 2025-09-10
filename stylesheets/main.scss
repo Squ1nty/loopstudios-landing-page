@@ -4,7 +4,7 @@ $grey-200: hsl(0, 0%, 85%);
 
 *{
   padding: 0;
-  margin: 0; 
+  margin: 0;
 
   box-sizing: border-box;
   font-family: "Alata", sans-serif; // Josefin Sans for cards???
@@ -18,5 +18,7 @@ body{
 }
 header{
   width: 100%;
-  background-image: url(../images/mobile/image-curiosity.jpg);
+}
+main{
+  width: 100%;
 }

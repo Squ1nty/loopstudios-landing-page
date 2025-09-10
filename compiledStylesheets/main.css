@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */
