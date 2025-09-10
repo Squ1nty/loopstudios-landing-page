@@ -1,3 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
 
+:root {
+  font-size: 15px;
+}
+
+body {
+  position: relative;
+  min-height: 100svh;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+}
+
+.flow > * + * {
+  margin-top: 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.Josefin-Sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.Alata {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.padding-3 {
+  padding: 6vw;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-image: url(../images/mobile/image-hero.jpg);
+    display: grid;
+    grid-template-rows: 50px 500px;
+    padding: 6vw;
+  }
+  h1 {
+    z-index: 2;
+  }
+  .header__topNav {
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  .topNav__hamburgerContainer,
+  .topNav__closingContainer {
+    margin-top: 2vw;
+  }
+  .topNav__closingContainer {
+    z-index: 2;
+    display: none;
+  }
+  .topNav__navbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 0%, 0%);
+    overflow: hidden;
+    transition: left 0.35s ease;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+  .header__sloganContainer {
+    width: fit-content;
+    justify-self: center;
+  }
+  .sloganContainer__text {
+    font-size: min(2.75rem, 10vw);
+    padding: max(1.5rem, 3vw);
+  }
+}
+@media (min-width: 769px) {
+  .topNav__hamburgerContainer, .topNav__closingContainer {
+    display: none;
+  }
+  header {
+    background-image: url(../images/desktop/image-hero.jpg);
+  }
+  nav ul {
+    display: flex;
+    align-items: baseline;
+  }
+  nav li {
+    padding: 0 1.25vw;
+  }
+  nav a {
+    font-size: min(1.5vw, 0.75rem);
+  }
+  .header__sloganContainer {
+    margin: 10vw 0;
+    width: 60%;
+    justify-self: flex-start;
+  }
+  .sloganContainer__text {
+    font-size: max(2.75rem, 5vw);
+    padding: max(1rem, 2vw);
+  }
+}
+header {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 3vw 10vw;
+}
+
+.header__topNav {
+  justify-content: space-between;
+}
+
+.header__sloganContainer {
+  align-self: center;
+}
+
+.sloganContainer__text {
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+ul {
+  list-style: none;
+}
 
 /*# sourceMappingURL=header.css.map */

@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  min-height: 100svh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+}
+
+.flow > * + * {
+  margin-top: 1.5em;
+}
+
+.Josefin__Sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.Alata {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.white__text {
+  color: hsl(0, 0%, 100%);
+}
+
+.padding-3 {
+  padding: 2em;
+}
+
+header {
+  width: 100%;
+  background-image: url(../images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 50px 500px;
+  overflow: hidden;
+}
+
+h1 {
+  z-index: 2;
+}
+
+.topNavContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.closingMenuIconContainer {
+  z-index: 2;
+  display: none;
+}
+
+.topNavBar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  max-width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(0, 0%, 0%);
+  overflow: hidden;
+  transition: left 0.35s ease, min-width 0.35s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-family: "Josefin Sans";
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.sloganContainer {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+}
+
+.sloganText {
+  font-size: max(2.75rem, 3.5vw);
+  border: 1px solid hsl(0, 0%, 100%);
+}/*# sourceMappingURL=header.css.map */

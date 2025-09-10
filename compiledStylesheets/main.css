@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 :root {
@@ -10,16 +10,43 @@
 }
 
 body {
+  position: relative;
   min-height: 100svh;
   min-height: 100vh;
 }
 
-header {
+main {
   width: 100%;
 }
 
-main {
-  width: 100%;
+.flow > * + * {
+  margin-top: 1.5em;
+}
+
+.flex {
+  display: flex;
+}
+
+.Josefin-Sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+.Alata {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+}
+
+.white-text {
+  color: hsl(0, 0%, 100%);
+}
+
+.padding-3 {
+  padding: 6vw;
+}
+
+.c-pointer {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */

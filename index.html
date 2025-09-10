@@ -20,21 +20,33 @@
 </head>
 <body>
   <header>
-    <section class="topNav">
-      <h1>loopstudios</h1>
-      <nav>
-        <ul>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
-          <li><a></a></li>
+    <section class="header__topNav [ flex ]">
+      <h1 class="[ Alata white-text c-pointer ]" tabindex="0">loopstudios</h1>
+      <div class="topNav__hamburgerContainer" tabindex="0">
+        <svg class="hamburgerMenuSvg" alt="Mobile Hamburger Menu Icon" width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="topNav__closingContainer" tabindex="0" inert="">
+        <svg class="closingMenuSvg" width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z" fill="#FFF" fill-rule="evenodd"/>
+        </svg>
+      </div>
+      <nav class="topNav__navbar [ Josefin-Sans white-text ]">
+        <ul class="[ flow ]">
+          <li><a class="navbar__anchor [ c-pointer Josefin-Sans ]" tabindex="0">ABOUT</a></li>
+          <li><a class="navbar__anchor [ c-pointer Josefin-Sans ]" tabindex="0">CAREERS</a></li>
+          <li><a class="navbar__anchor [ c-pointer Josefin-Sans ]" tabindex="0">EVENTS</a></li>
+          <li><a class="navbar__anchor [ c-pointer Josefin-Sans ]" tabindex="0">PRODUCTS</a></li>
+          <li><a class="navbar__anchor [ c-pointer Josefin-Sans ]" tabindex="0">SUPPORT</a></li>
         </ul>
       </nav>
     </section>
-    <div></div>
+    <div class="header__sloganContainer [ flex ]"><p class="sloganContainer__text [ Josefin-Sans white-text ]">IMMERSIVE EXPERIENCES THAT DELIVER</p></div>
   </header>
-  <main>Test</main>
+  <main>Main</main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Squ1nty">Vincent Dao</a>.

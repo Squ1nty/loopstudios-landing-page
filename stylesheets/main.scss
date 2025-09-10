@@ -2,23 +2,64 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $grey-200: hsl(0, 0%, 85%);
 
+$padding-1: 1em;
+$padding-2: 1.5em;
+$padding-3: 6vw; //Incorporate vw into variables, more scalable :)
+
+$ff-js: "Josefin Sans", sans-serif;
+$fw-300: 300;
+
+$ff-a: "Alata", sans-serif;
+$fw-400: 400;
+
+$c-pointer: pointer;
+
 *{
   padding: 0;
   margin: 0;
 
   box-sizing: border-box;
-  font-family: "Alata", sans-serif; // Josefin Sans for cards???
+  font-family: "Josefin Sans", sans-serif;
 }
 :root{
   font-size: 15px;
 }
 body{
+  position: relative;
   min-height: 100svh;
   min-height: 100vh;
 }
-header{
-  width: 100%;
-}
 main{
   width: 100%;
+}
+
+// COMPOSITIOOO
+.flow > * + *{
+  margin-top: 1.5em;
+}
+.flex{
+  display: flex;
+}
+
+// Font related utilities
+.Josefin-Sans{
+  font-family: $ff-js;
+  font-weight: $fw-300;
+}
+.Alata{
+  font-family: $ff-a;
+  font-weight: $fw-400;
+}
+.white-text{
+  color: $white;
+}
+
+// Layout utilities
+.padding-3{
+  padding: $padding-3;
+}
+
+// Misc utilities
+.c-pointer{
+  cursor: $c-pointer;
 }
