@@ -5,12 +5,27 @@ let topNavBar = document.querySelector(".topNav__navbar");
 let topNavAnchorS = document.querySelectorAll(".navbar__anchor");
 let lastTopNavAnchor = topNavAnchorS[topNavAnchorS.length - 1];
 
-window.addEventListener("reload", () => {
+let introImg = document.querySelector(".introSection__img");
+
+// Changes introSection image based off screen size
+function handleIntroImg(){
+  if(window.innerWidth < 769){
+    introImg.setAttribute("src", "./images/mobile/image-interactive.jpg");
+  }
+  else{
+    introImg.setAttribute("src", "./images/desktop/image-interactive.jpg");
+  }
+}
+
+// Onload and resize
+window.addEventListener("load", () => {
+  handleIntroImg();
   if(window.innerWidth <  769){
     topNavBar.setAttribute("inert", true);
   }
 });
 window.addEventListener("resize", () => {
+  handleIntroImg();
   if(topNavBar.style.left === "100%"){ // If nav pop-out is already open
     if(window.innerWidth > 768){
       hamburgerMenuIcon.style.display = "none";
