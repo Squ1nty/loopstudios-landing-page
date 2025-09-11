@@ -155,10 +155,6 @@ main {
     overflow: hidden;
     width: 100%;
   }
-  .topNav__hamburgerContainer,
-  .topNav__closingContainer {
-    margin-top: 2vw;
-  }
   .topNav__closingContainer {
     z-index: 2;
     display: none;
