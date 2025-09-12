@@ -7,6 +7,35 @@ let lastTopNavAnchor = topNavAnchorS[topNavAnchorS.length - 1];
 
 let introImg = document.querySelector(".introSection__img");
 
+let cardImgs = document.querySelectorAll(".cardImg");
+
+// Changes which images are displayed on each card depending on screen size
+function handleCards(){
+  let screenType = "";
+  if(window.innerWidth > 1024){
+    screenType = "desktop";
+  }
+  else{
+    screenType = "mobile";
+  }
+
+  let cardsArray = [`./images/${screenType}/image-deep-earth.jpg`, 
+                   `./images/${screenType}/image-night-arcade.jpg`, 
+                   `./images/${screenType}/image-soccer-team.jpg`, 
+                   `./images/${screenType}/image-grid.jpg`, 
+                   `./images/${screenType}/image-from-above.jpg`,
+                   `./images/${screenType}/image-pocket-borealis.jpg`, 
+                   `./images/${screenType}/image-curiosity.jpg`, 
+                   `./images/${screenType}/image-fisheye.jpg`];
+
+  let count = 0;
+
+  cardImgs.forEach((cardImg) => {
+    cardImg.setAttribute("src", `${cardsArray[count]}`);
+    count++;
+  });
+}
+
 // Changes introSection image based off screen size
 function handleIntroImg(){
   if(window.innerWidth < 769){
@@ -20,12 +49,14 @@ function handleIntroImg(){
 // Onload and resize
 window.addEventListener("load", () => {
   handleIntroImg();
+  handleCards();
   if(window.innerWidth <  769){
     topNavBar.setAttribute("inert", true);
   }
 });
 window.addEventListener("resize", () => {
   handleIntroImg();
+  handleCards();
   if(topNavBar.style.left === "100%"){ // If nav pop-out is already open
     if(window.innerWidth > 768){
       hamburgerMenuIcon.style.display = "none";

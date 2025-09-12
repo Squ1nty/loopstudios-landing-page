@@ -20,3 +20,8 @@
     border-bottom: 1px solid main.$white;
   }
 }
+
+.cardsSection__seeAllBtn:hover{
+  color: main.$white;
+  background-color: main.$black;
+}
