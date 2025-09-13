@@ -134,6 +134,15 @@ main{
     align-items: center;
     justify-content: center;
   }
+
+  .cardContainer__text{
+    bottom: min(20%, 4rem);
+    left: 10%;
+    right: 40%;
+  }
+  .theGridContainer{
+    right: 80%;
+  }
 }
 @media(max-width: 1024px){
   .cardsSection__cardGridContainer{
@@ -207,10 +216,19 @@ main{
   }
   .cardsSection__cardGridContainer{
     grid-area: bottom;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 290px));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 265px));
     align-items: center;
     justify-content: center;
     padding: 3vw 0;
+  }
+
+  .cardContainer__text{
+    bottom: 8%;
+    left: 10%;
+    right: 20%;
+  }
+  .theGridContainer{
+    right: 80%;
   }
 }
 @media(min-width: 1826px){
@@ -234,6 +252,44 @@ main{
     line-height: 2vw;
     filter: opacity(40%);
   }
+  .main__cardsSection{
+    grid-template-rows: fit-content 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      'left right'
+      'bottom bottom';
+    padding: 0 10vw;
+  }
+  .cardsSection__heading, .cardsSection__btnContainer{
+    justify-content: flex-end;
+  }
+  .cardsSection__heading{
+    grid-area: left;
+  }
+  .cardsSection__btnContainer{
+    grid-area: right;
+    align-items: flex-end;
+  }
+  .cardsSection__seeAllBtn{
+    padding: 0.75vw 2vw;
+    font-size: 1vw;
+    letter-spacing: 0.5vw;
+  }
+  .cardsSection__cardGridContainer{
+    grid-area: bottom;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 465px));
+    align-items: center;
+    justify-content: center;
+    padding: 3vw 0;
+  }
+  .cardContainer__text{
+    bottom: 8%;
+    left: 10%;
+    right: 20%;
+  }
+  .theGridContainer{
+    right: 80%;
+  }
 }
 
 .main__cardsSection, .cardsSection__cardGridContainer{
@@ -251,8 +307,24 @@ main{
 .cardImg{
   width: 100%;
   height: auto;
+
+  filter: brightness(75%);
 }
 .cardsSection__cardGridContainer{
   width: 100%;
   gap: 2vw;
+}
+
+.cardsSection__cardContainer{
+  position: relative;
+  transition: filter 0.15s ease;
+}
+.cardContainer__text{
+  color: $white;
+  position: absolute;
+
+  z-index: 2;
+
+  font-size: max(1.5rem, 2.25vw);
+  transition: color 0.15s ease;
 }

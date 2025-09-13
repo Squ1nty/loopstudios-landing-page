@@ -25,3 +25,10 @@
   color: main.$white;
   background-color: main.$black;
 }
+
+.cardsSection__cardContainer:hover .cardImg{
+  filter: opacity(60%);
+}
+.cardsSection__cardContainer:hover .cardContainer__text{
+  color: main.$black;
+}
