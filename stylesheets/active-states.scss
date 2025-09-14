@@ -21,14 +21,16 @@
   }
 }
 
-.cardsSection__seeAllBtn:hover{
+.cardsSection__seeAllBtn:hover, .cardsSection__seeAllBtn:focus{
   color: main.$white;
   background-color: main.$black;
 }
 
-.cardsSection__cardContainer:hover .cardImg{
+.cardsSection__cardContainer:hover .cardImg, 
+.cardsSection__cardContainer:focus .cardImg{
   filter: opacity(60%);
 }
-.cardsSection__cardContainer:hover .cardContainer__text{
+.cardsSection__cardContainer:hover .cardContainer__text, 
+.cardsSection__cardContainer:focus .cardContainer__text{
   color: main.$black;
 }

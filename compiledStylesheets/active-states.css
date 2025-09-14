@@ -320,16 +320,18 @@ main {
     border-bottom: 1px solid hsl(0, 0%, 100%);
   }
 }
-.cardsSection__seeAllBtn:hover {
+.cardsSection__seeAllBtn:hover, .cardsSection__seeAllBtn:focus {
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 0%, 0%);
 }
 
-.cardsSection__cardContainer:hover .cardImg {
+.cardsSection__cardContainer:hover .cardImg,
+.cardsSection__cardContainer:focus .cardImg {
   filter: opacity(60%);
 }
 
-.cardsSection__cardContainer:hover .cardContainer__text {
+.cardsSection__cardContainer:hover .cardContainer__text,
+.cardsSection__cardContainer:focus .cardContainer__text {
   color: hsl(0, 0%, 0%);
 }
 

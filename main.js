@@ -77,7 +77,7 @@ window.addEventListener("resize", () => {
 
 // Handle mobile menu focus-trap
 lastTopNavAnchor.addEventListener("keydown", (e) => {
-  if(e.key === "Tab"){
+  if(e.key === "Tab" && window.innerWidth <= 768){
     e.preventDefault();
     closingMenuIcon.focus();
   }
