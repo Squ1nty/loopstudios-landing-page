@@ -308,7 +308,8 @@ main{
   width: 100%;
   height: auto;
 
-  filter: brightness(75%);
+  filter: brightness(75%), opacity(1);
+  transition: filter 0.15s ease;
 }
 .cardsSection__cardGridContainer{
   width: 100%;
@@ -317,7 +318,6 @@ main{
 
 .cardsSection__cardContainer{
   position: relative;
-  transition: filter 0.15s ease;
 }
 .cardContainer__text{
   color: $white;
