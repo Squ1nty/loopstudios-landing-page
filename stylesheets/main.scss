@@ -2,7 +2,7 @@ $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 $grey-200: hsl(0, 0%, 85%);
 
-$padding-1: 1em;
+$padding-1: 2vw;
 $padding-2: 1.5em;
 $padding-3: 6vw; //Incorporate vw into variables, more scalable :)
 
@@ -64,6 +64,9 @@ main{
 }
 
 // Layout utilities
+.padding-1{
+  padding: max(3rem, 2vw) 10vw;
+}
 .padding-3{
   padding: $padding-3;
 }

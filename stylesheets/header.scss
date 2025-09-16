@@ -36,7 +36,7 @@
     overflow: hidden;
     transition: left 0.35s ease;
   }
-  nav ul{
+  nav:not([data-type=bottomNav]) ul{
     margin-top: 40vw;
   }
   nav a{

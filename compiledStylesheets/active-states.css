@@ -52,6 +52,10 @@ main {
   color: hsl(0, 0%, 100%);
 }
 
+.padding-1 {
+  padding: max(3rem, 2vw) 10vw;
+}
+
 .padding-3 {
   padding: 6vw;
 }
